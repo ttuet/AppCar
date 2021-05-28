@@ -1,0 +1,8 @@
+ext {
+    versions = [
+    room   : "2.3.0",
+    room_coroutines : "2.3.0",
+    coroutines : "1.4.1"
+    ]
+
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height_item_notice">
+
+
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageNotice"
+                android:layout_width="@dimen/image_size_notice"
+                android:layout_height="@dimen/image_size_notice"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                tools:src="@drawable/bb_105" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/titleNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_notice_color"
+                android:textSize="@dimen/title_notice_size"
+                android:textStyle="bold"
+                tools:text="Cấm xe công nông" />
+
+            <TextView
+                android:id="@+id/idNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_notice_color"
+                android:textSize="@dimen/id_notice_size"
+                android:textStyle="bold"
+                tools:text="Số hiệu: 103b" />
+
+            <TextView
+                android:id="@+id/desNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#716E6E"
+                android:textSize="@dimen/id_notice_size"
+                android:textStyle="bold"
+                tools:text="Đường ở phía trước cấm tất cả các loại xe đi thẳng. Biển được đặt ở vị trí ngay trước nút giao của đường cấm đi thẳng. Nếu có quy định cắm về thời gian và loại xe thì sử dụng biển báo phụ thời gian hoặc hình vẽ loại xe cấm." />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

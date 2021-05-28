@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_menu"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.appcar.ui.map.MapFragment"
+        android:label="map_fragment"
+        tools:layout="@layout/map_fragment" >
+        <action
+            android:id="@+id/action_mapFragment_to_listRoadFragment"
+            app:destination="@id/listRoadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/feedBackFragment"
+        android:name="com.example.appcar.ui.feedback.FeedBackFragment"
+        android:label="feed_back_fragment"
+        tools:layout="@layout/feed_back_fragment" />
+
+    <fragment
+        android:id="@+id/noticeBoardFragment"
+        android:name="com.example.appcar.ui.ban.NoticeBoardFragment"
+        android:label="notice_board_fragment"
+        tools:layout="@layout/notice_board_fragment" >
+        <action
+            android:id="@+id/action_noticeBoardFragment_to_feedBackFragment"
+            app:destination="@id/feedBackFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listRoadFragment"
+        android:name="com.example.appcar.ui.list.ListRoadFragment"
+        android:label="list_road_fragment"
+        tools:layout="@layout/list_road_fragment" >
+        <action
+            android:id="@+id/action_listRoadFragment_to_noticeBoardFragment"
+            app:destination="@id/noticeBoardFragment" />
+    </fragment>
+
+
+</navigation>

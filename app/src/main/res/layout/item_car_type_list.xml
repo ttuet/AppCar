@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageCarType"
+        android:src="@drawable/bg_icon_type_selected"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image_type_car" />
+
+    <TextView
+        android:id="@+id/nameCarTypeAtList"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_marginStart="10dp"
+        android:textColor="#0C5281"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        tool:text="Xe taxi"
+        app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_36_24" />
+
+
+</LinearLayout>

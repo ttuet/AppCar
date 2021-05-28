@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ban.InfoFragment">
+
+    <LinearLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/inputSearchNoticeBoard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_search_input"
+            android:layout_weight="3"
+            android:background="@color/line_search_box"
+            android:hint="@string/hint_search_notice_board"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="10dp"
+            android:textSize="@dimen/size_text_input"
+            app:drawableEndCompat="@drawable/ic_clear_24"
+            app:drawableStartCompat="@drawable/ic_baseline_search_24" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            style="@style/CustomTextAppearanceButton"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@color/color_background_tab_layout"
+            android:text="@string/search"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/countResultSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchBar"
+        android:layout_marginHorizontal="@dimen/margin_search_input"
+        android:textSize="@dimen/size_text_input"
+        android:textStyle="bold"
+        tools:text="Có 20 kết quả tìm thấy: " />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countResultSearch"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_notice_board" />
+
+
+</RelativeLayout>

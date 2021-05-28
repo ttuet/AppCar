@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mapFragment"
+        android:enabled="true"
+        android:title="Bản đồ"
+        android:icon="@drawable/ic_baseline_map_24" />
+
+    <item android:id="@+id/listRoadFragment"
+        android:enabled="true"
+        android:title="Danh sách"
+        android:icon="@drawable/ic_baseline_list_alt_24" />
+
+    <item android:id="@+id/noticeBoardFragment"
+        android:enabled="true"
+        android:title="Biển báo"
+        android:icon="@drawable/ic_baseline_bann_24" />
+
+    <item android:id="@+id/feedBackFragment"
+        android:enabled="true"
+        android:title="Phản hồi"
+        android:icon="@drawable/ic_baseline_feedback_24" />
+</menu>

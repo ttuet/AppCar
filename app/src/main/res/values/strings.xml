@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppCar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_map_key">AIzaSyDKOfpz38nXnxMAF9ddgGEsvj96MUJnCpo</string>
+    <string name="image_type_car">image_type_car</string>
+    <string name="hint_search_notice_board">Tìm biển báo giao thông</string>
+    <string name="search">Tìm kiếm</string>
+</resources>
